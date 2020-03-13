@@ -22,7 +22,7 @@ export class converter extends Component {
   componentDidMount = () => {
     document.title = "Currency Converter";
     const fetchCurrencies = () => {
-      axiosgit commit -m "first commit"
+      axios
         .get(
           "http://www.apilayer.net/api/list?access_key=f693059fa767e40c5c0cfc0c2ce9ece4"
         )
