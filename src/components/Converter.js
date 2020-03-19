@@ -24,7 +24,7 @@ export class converter extends Component {
     const fetchCurrencies = () => {
       axios
         .get(
-          "http://www.apilayer.net/api/list?access_key=f693059fa767e40c5c0cfc0c2ce9ece4"
+          "https://www.apilayer.net/api/list?access_key=f693059fa767e40c5c0cfc0c2ce9ece4"
         )
         .then(res => {
           this.setState({ currencies: res.data.currencies });
