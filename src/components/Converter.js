@@ -44,7 +44,7 @@ export class converter extends Component {
     const fetchExchangeRates = () => {
       axios
         .get(
-          "http://www.apilayer.net/api/live?access_key=f693059fa767e40c5c0cfc0c2ce9ece4"
+          "https://www.apilayer.net/api/live?access_key=f693059fa767e40c5c0cfc0c2ce9ece4"
         )
         .then(res => {
           this.setState({ exchangeRate: res.data.quotes });
